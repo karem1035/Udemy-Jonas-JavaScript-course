@@ -27,6 +27,28 @@ console.log(country, continent, population);
 // to the console
 
 const isIsland = false;
-const language;
+const language = "Arabic";
 
-console.log(isIsland,country, continent, population, language);
+console.log(isIsland, country, continent, population, language);
+
+// LECTURE: Basic Operators
+
+// 1. If your country split in half, and each half would contain half the population, then how many people would live in each half?
+const halfPopulation = population / 2;
+
+// 2. Increase the population of your country by 1 and log the result to the console
+const populationPlus = population + 1;
+console.log(populationPlus);
+
+// 3. Finland has a population of 6 million. Does your country have more people than Finland?
+
+const isMoreThanFinland = population > 6;
+console.log("is egypt has more population than finaln ? ", isMoreThanFinland);
+// 4. The average population of a country is 33 million people. Does your country have less people than the average country?
+const isMoreThanAverage = population > 33;
+console.log("is egypt has more population than Average ? ", isMoreThanAverage);
+
+// 5. Based on the variables you created, create a new variable 'description' which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'
+const description = `${country} is in ${continent}, and it is ${population} million people speaks ${language}`;
+
+console.log(description);
